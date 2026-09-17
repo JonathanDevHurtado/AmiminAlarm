@@ -4,8 +4,47 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- Star shape for anime aesthetic -->
+
+    <!-- Campanas del despertador -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M54,24 L58.5,42 L78,42 L62.5,52.5 L67,70 L54,59.5 L41,70 L45.5,52.5 L30,42 L49.5,42 Z"/>
+        android:pathData="M30,25 a8,5.5 0 1,0 16,0 a8,5.5 0 1,0 -16,0 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,25 a8,5.5 0 1,0 16,0 a8,5.5 0 1,0 -16,0 Z" />
+
+    <!-- Esfera del reloj -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5.5"
+        android:pathData="M31,58 a23,23 0 1,0 46,0 a23,23 0 1,0 -46,0 Z" />
+
+    <!-- Manecilla de la hora -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M54,58 L54,43" />
+
+    <!-- Manecilla de los minutos -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M54,58 L66,64" />
+
+    <!-- Punto central -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,54 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+
+    <!-- Pétalos de sakura decorativos -->
+    <path
+        android:fillColor="#FFD6E8"
+        android:fillAlpha="0.9"
+        android:pathData="M22,80 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M25.4,76.6 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M25.4,83.4 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M18.6,83.4 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z" />
+    <path
+        android:fillColor="#FFD6E8"
+        android:fillAlpha="0.9"
+        android:pathData="M79,80 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M82.4,76.6 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M82.4,83.4 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z M75.6,83.4 a3.4,3.4 0 1,0 6.8,0 a3.4,3.4 0 1,0 -6.8,0 Z" />
 </vector>
