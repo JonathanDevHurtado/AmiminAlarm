@@ -1,0 +1,46 @@
+# --- Android / Gradle ---
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+*.log
+
+# --- Keystore / secretos ---
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+google-services.json
+
+# --- Kotlin ---
+.kotlin/
+
+# --- Entorno ---
+*.env
+.env
+.env.local
+
+# --- Sistema ---
+Thumbs.db
+desktop.ini
+
+# --- Build outputs ---
+app/build/
+app/release/
+
+# Carpeta de staging local (no versionada)
+Github/

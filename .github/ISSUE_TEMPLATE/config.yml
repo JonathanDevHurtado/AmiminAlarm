@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentación
+    url: https://github.com/JonathanDevHurtado/AmiminAlarm/tree/main/docs
+    about: Consulta la documentación antes de abrir un issue.
+  - name: 🔒 Reporte de seguridad
+    url: https://github.com/JonathanDevHurtado/AmiminAlarm/security/policy
+    about: Reporta vulnerabilidades de forma privada.
