@@ -49,3 +49,8 @@ Github/
 keystore.properties
 keystore/
 *.jks
+
+# Firma del APK (no versionar)
+FirmaDelApk/
+keystore.properties
+*.jks
