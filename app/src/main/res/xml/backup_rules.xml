@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Reglas de Auto Backup para Android 11 y anteriores.
+  Se respaldan los datos del usuario: base de datos (alarmas y eventos),
+  preferencias (ajustes) y archivos internos (wallpaper).
+-->
 <full-backup-content>
+    <include domain="database" path="." />
     <include domain="sharedpref" path="." />
-    <exclude domain="sharedpref" path="." />
+    <include domain="file" path="." />
 </full-backup-content>

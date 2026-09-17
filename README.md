@@ -111,11 +111,32 @@ Interfaz completa en **8 idiomas**, con **saludo según el país y la hora**:
   <img src="screenshots/5-alarm-dialog.png" width="200" alt="Configurar alarma"/>
   &nbsp;
   <img src="screenshots/4-event-dialog.png" width="200" alt="Nuevo evento"/>
+  &nbsp;
+  <img src="screenshots/6-settings.png" width="200" alt="Configuración"/>
 </p>
 
 <p align="center">
   <em>Wallpaper anime con colores extraídos automáticamente · stickers · fondos animados</em>
 </p>
+
+---
+
+## ⬇️ Descarga
+
+La forma más fácil de probar AmiminAlarm es descargar el APK firmado:
+
+<p align="center">
+  <a href="https://github.com/JonathanDevHurtado/AmiminAlarm/releases/latest">
+    <img src="https://img.shields.io/badge/⬇️_Descargar_APK-v1.0.0-FF6B9D?style=for-the-badge" alt="Descargar APK"/>
+  </a>
+</p>
+
+> **Requiere Android 8.0 (API 26) o superior.**
+> Al instalar, activa «Instalar apps de origen desconocido» para tu navegador
+> o gestor de archivos.
+
+Si prefieres compilarlo tú mismo, consulta la sección
+[Compilar y ejecutar](#-compilar-y-ejecutar).
 
 ---
 

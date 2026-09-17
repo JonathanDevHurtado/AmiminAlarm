@@ -44,3 +44,8 @@ app/release/
 
 # Carpeta de staging local (no versionada)
 Github/
+
+# Firma de release (no versionar)
+keystore.properties
+keystore/
+*.jks
