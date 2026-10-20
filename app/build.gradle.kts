@@ -130,7 +130,7 @@ dependencies {
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
 
     // Coil for image loading
-    implementation("io.coil-kt:coil-compose:2.5.0")
+    implementation("io.coil-kt:coil-compose:2.7.0")
 
     // Media3 ExoPlayer for video live wallpaper
     implementation("androidx.media3:media3-exoplayer:1.2.1")
