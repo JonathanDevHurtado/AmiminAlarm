@@ -1,0 +1,30 @@
+name: 💡 Sugerencia de funcionalidad
+description: Propón una idea para AmiminAlarm
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué problema resuelve?
+      description: Describe la necesidad o el problema.
+    validations:
+      required: true
+  - type: textarea
+    id: solucion
+    attributes:
+      label: Solución propuesta
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+    validations:
+      required: false
