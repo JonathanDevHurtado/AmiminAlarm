@@ -75,11 +75,13 @@ SHA256SUMS.txt
 ```
 
 ```bash
-gzip -d AmiminAlarm-1.2.0-mapping.txt.gz
 sha256sum AmiminAlarm-1.2.0.apk \
           AmiminAlarm-1.2.0.aab \
           AmiminAlarm-1.2.0-docs.zip \
           AmiminAlarm-1.2.0-mapping.txt.gz > SHA256SUMS.txt
+
+# Opcional: descomprimir para leer el mapping (no borra el .gz)
+gzip -dk AmiminAlarm-1.2.0-mapping.txt.gz
 ```
 
 ---
