@@ -1,6 +1,6 @@
-# Verificación — AmiminAlarm 1.1.0
+# Verificación — AmiminAlarm 1.2.0
 
-Fecha: **2026-10-20**  
+Fecha: **2026-10-21**
 Entorno: Linux, JDK 17 (`17.0.13-tem`), Android SDK con build-tools 36.0.0.
 
 ---
@@ -8,22 +8,23 @@ Entorno: Linux, JDK 17 (`17.0.13-tem`), Android SDK con build-tools 36.0.0.
 ## Comandos ejecutados
 
 ```bash
-./gradlew --no-daemon testDebugUnitTest assembleDebug lintDebug assembleRelease
+export JAVA_HOME=/ruta/al/jdk-17
+./gradlew --no-daemon clean testDebugUnitTest lintDebug assembleRelease bundleRelease
 ```
 
 Resultado:
 
 ```
-BUILD SUCCESSFUL
-102 actionable tasks
+BUILD SUCCESSFUL in 5m 34s
+95 actionable tasks: 94 executed, 1 up-to-date
 ```
 
 | Tarea | Resultado |
 |-------|-----------|
 | `testDebugUnitTest` | ✅ 19 tests, 0 fallos, 0 errores |
-| `assembleDebug` | ✅ `app-debug.apk` (22 MB) |
 | `lintDebug` | ✅ sin errores (128 avisos, en su mayoría dependencias y recursos sin usar) |
-| `assembleRelease` | ✅ `app-release.apk` (8,3 MB), R8 + resource shrinking |
+| `assembleRelease` | ✅ `app-release.apk` (8,2 MB), R8 + resource shrinking |
+| `bundleRelease` | ✅ `app-release.aab` (19,7 MB) |
 
 Los 19 tests se reparten así:
 
@@ -32,17 +33,24 @@ Los 19 tests se reparten así:
 
 ---
 
-## Firma del release
+## Release 1.2.0
 
-`apksigner verify --print-certs` confirma un APK firmado:
+| Artefacto | Tamaño | SHA-256 |
+|---|---:|---|
+| `AmiminAlarm-1.2.0.apk` | 8,2 MB | `b0a71e8d26dd12cd2b387e25600a6310bc2b150acba5cd78bce5e8bdc14c4ffc` |
+| `AmiminAlarm-1.2.0.aab` | 19,7 MB | `5f148c1004f52e6e866eb9c6692a173d46484f1370b55f52fee8410d732a8b4a` |
+
+Firma comprobada con `apksigner verify --print-certs`:
 
 ```
 Signer #1 certificate DN: CN=Jonathan Hurtado, OU=AmiminAlarm,
   O=JonathanDevHurtado, L=Bogota, C=CO
 ```
 
-Las credenciales de firma no están en el repositorio (`keystore.properties` y
-`FirmaDelApk/` están ignorados).
+El AAB también pasa `jarsigner -verify`. Las credenciales de firma no están en el
+repositorio (`keystore.properties` y `FirmaDelApk/` están ignorados). El mapping
+de R8 se publica comprimido como `AmiminAlarm-1.2.0-mapping.txt.gz` porque el
+archivo sin comprimir supera los 180 MB.
 
 ---
 

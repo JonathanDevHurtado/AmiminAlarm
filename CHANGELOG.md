@@ -7,6 +7,25 @@ y el proyecto se adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
 ---
 
+## [1.2.0] — 2026-10-21
+
+Versión de distribución: mismo comportamiento que 1.1.0, ahora con paquete de
+release firmado, mapping de R8 y documentación descargable.
+
+### Añadido
+
+- APK de release firmado y AAB para Google Play.
+- Paquete de documentación `AmiminAlarm-1.2.0-docs.zip`.
+- `mapping.txt` de R8, publicado comprimido como `AmiminAlarm-1.2.0-mapping.txt.gz`.
+- `SHA256SUMS.txt` para verificar la integridad.
+- Sección de descarga ampliada en el README.
+- [`docs/PUBLICAR.md`](docs/PUBLICAR.md) con el proceso de release y custodia de claves.
+
+### Cambiado
+
+- `versionCode` 3 y `versionName` 1.2.0.
+- `docs/08-verificacion.md` actualizado con el build de release.
+
 ## [1.1.0] — 2026-10-20
 
 Versión de mantenimiento centrada en fiabilidad de alarmas, seguridad y auditoría.

@@ -7,7 +7,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Versión-1.1.0-FF6B9D?style=for-the-badge" alt="Versión 1.1.0"/>
+  <img src="https://img.shields.io/badge/Versión-1.2.0-FF6B9D?style=for-the-badge" alt="Versión 1.2.0"/>
+  <a href="https://github.com/JonathanDevHurtado/AmiminAlarm/releases/latest"><img src="https://img.shields.io/github/v/release/JonathanDevHurtado/AmiminAlarm?style=for-the-badge&label=release&color=FF6B9D" alt="Última release"/></a>
   <img src="https://img.shields.io/badge/Android-8.0%2B%20(API%2026)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 8.0+"/>
   <img src="https://img.shields.io/badge/Kotlin-1.9-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin 1.9"/>
   <img src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose"/>
@@ -100,7 +101,7 @@ Interfaz completa en **8 idiomas**, con **saludo según el país y la hora**:
 
 ## ⚠️ Estado y limitaciones
 
-- Proyecto personal, mantenido por un solo desarrollador. La versión estable actual es **1.1.0**.
+- Proyecto personal, mantenido por un solo desarrollador. La versión estable actual es **1.2.0**.
 - `targetSdk` es **34**. La app funciona en Android 8.0–15, pero una futura publicación en Google Play requerirá subir el target.
 - La copia de seguridad es **local**: el selector del sistema permite guardarla en Drive u otro proveedor, pero la app no se conecta a ninguna nube.
 - No hay cuentas, sincronización, telemetría ni publicidad.
@@ -138,9 +139,21 @@ La forma más fácil de probar AmiminAlarm es descargar el APK firmado:
 
 <p align="center">
   <a href="https://github.com/JonathanDevHurtado/AmiminAlarm/releases/latest">
-    <img src="https://img.shields.io/badge/⬇️_Descargar_APK-v1.1.0-FF6B9D?style=for-the-badge" alt="Descargar APK"/>
+    <img src="https://img.shields.io/badge/⬇️_Descargar_APK-v1.2.0-FF6B9D?style=for-the-badge" alt="Descargar APK"/>
   </a>
 </p>
+
+| Archivo | Uso |
+|---|---|
+| `AmiminAlarm-1.2.0.apk` | Instalar en el teléfono (firmado) |
+| `AmiminAlarm-1.2.0.aab` | Subir a Google Play |
+| `AmiminAlarm-1.2.0-docs.zip` | Documentación completa sin conexión |
+| `AmiminAlarm-1.2.0-mapping.txt.gz` | Mapping R8 comprimido para desofuscar crashes |
+| `SHA256SUMS.txt` | Verificar la integridad de las descargas |
+
+```bash
+sha256sum -c SHA256SUMS.txt
+```
 
 > **Requiere Android 8.0 (API 26) o superior.**
 > Al instalar, activa «Instalar apps de origen desconocido» para tu navegador
@@ -309,6 +322,7 @@ app/build/outputs/apk/debug/app-debug.apk
 | [Temas y personalización](docs/06-temas.md) | Sistema de temas, wallpaper y colores |
 | [Dificultades y decisiones](docs/07-dificultades.md) | Problemas reales encontrados y cómo se resolvieron |
 | [Verificación](docs/08-verificacion.md) | Comandos, tests, lint, firma y limitaciones de la prueba |
+| [Publicar](docs/PUBLICAR.md) | Firma, artefactos, checksums y publicación |
 
 ---
 

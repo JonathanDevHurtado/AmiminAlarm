@@ -38,7 +38,7 @@
     <string name="anime_stickers">Anime Stickers</string>
     <string name="anime_stickers_desc">Show anime stickers in calendar events</string>
     <string name="language">Language</string>
-    <string name="version">Version 1.1.0</string>
+    <string name="version">Version 1.2.0</string>
     <string name="about_license_note">Source-available · Proprietary license</string>
     <string name="about_contact" translatable="false">JonathanHurtadoDev@proton.me</string>
     <string name="select_theme">Select Theme</string>
